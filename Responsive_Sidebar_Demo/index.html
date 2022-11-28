@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Responsive Sidebar</title>
+</head>
+<body>
+    
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img width="30" src="logo.png" alt="" class="sidebar-logo">
+                <h1> Menu</h1>
+            </header>
+
+            <nav class="sidebar-menu">
+                <button type="button">
+                    <i class='bx bx-home' ></i>
+                    <span>Home</span>
+                </button>
+                <button type="button">
+                    <i class='bx bxs-user-account' ></i>
+                    <span>Accounts</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-cog' ></i>
+                    <span>Settings</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-code-block' ></i>
+                    <span>Blockchain</span>
+                </button>
+                <button type="button">
+                    <i class='bx bxl-mongodb' ></i>
+                    <span>Databases</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-headphone' ></i>
+                    <span>AudioVibe</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-music' ></i>
+                    <span>Soundblast</span>
+                </button>
+                <button type="button" class="has-border1">
+                    <i class='bx bx-folder' ></i>
+                    <span>Folders</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-home' ></i>
+                    <span>Levels</span>
+                </button>
+                <button type="button">
+                    <i class='bx bx-lock-alt' ></i>
+                    <span>Security</span>
+                </button>
+            </nav>
+
+            
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar =  () => document.body.classList.toggle("open");
+    </script>
+
+
+
+</body>
+</html>
